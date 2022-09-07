@@ -3,7 +3,7 @@ import numpy as np
 def calculate(element_list:list):
     
     if len(element_list) < 9 or len(element_list) > 9:
-        raise Exception("List must contain nine numbers.") 
+        raise ValueError("List must contain nine numbers.") 
     
     shape = 3
     array = np.array(element_list)
